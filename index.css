@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+
+header .header {
+  width: 100%;
+  height: 90px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkblue;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+aside {
+  position: fixed;
+  left: 0;
+  top: 90px;
+  width: 250px;
+  background-color: #fff;
+  height: 100%;
+  bottom: 0px;
+}
+main {
+  position: fixed;
+  background: lightgray;
+  top: 90px;
+  left: 250px;
+  right: 0px;
+  bottom: 0px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.list-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.list-options .options-items {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.aside-ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.aside-list {
+  display: flex;
+  height: 50px;
+  font-size: 18px;
+  border-bottom: 1px solid lightgray;
+  align-items: center;
+  padding: 30px;
+  list-style-type: none;
+}
+
+.aside-list:hover {
+  background-color: rgb(238, 238, 145);
+  cursor: pointer;
+}
+
+.table-container {
+  padding: 15px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.75);
+  min-height: 70vh;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0px;
+}
+
+.table thead .header {
+  width: 25%;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.actions {
+  text-align: center !important;
+}
+
+.table tbody .actions .actions-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.table tbody .actions .actions-buttons button,
+.btn-add {
+  width: 70px;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.table tbody .actions .actions-buttons .edit,
+.btn-add {
+  background-color: rgba(0, 0, 255, 0.75);
+  color: white;
+  border: 1px solid blue;
+}
+.table tbody .actions .actions-buttons .edit:hover,
+.btn-add:hover {
+  background-color: blue;
+}
+.table tbody .actions .actions-buttons .delete {
+  background-color: rgba(255, 0, 0, 0.75);
+  color: white;
+  border: 1px solid red;
+}
+.table tbody .actions .actions-buttons .delete:hover {
+  background-color: red;
+}
+.table tbody .body-cell {
+  padding: 10px 0;
+}
+.add-div{
+ display: flex;
+ width: 100%;
+ justify-content: flex-end;
+ align-items: center;
+ margin-bottom: 10px; 
+}
+main .btn-add {
+  width: fit-content;
+  padding: 2px 8px;
+  margin-bottom: 10px;
+  
+}

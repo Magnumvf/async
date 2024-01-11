@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela clientes</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <h2 class="title">Clientes</h2>
+        <div>
+          <ul class="list-options">
+            <li><a class="options-items" href="#">Fale conosco</a></li>
+            <li><a class="options-items" href="#">Sobre nós</a></li>
+            <li><a class="options-items" href="#">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <aside>
+      <ul class="aside-ul">
+        <li class="aside-list">Dashboard</li>
+        <li class="aside-list">Clientes</li>
+        <li class="aside-list">Produtos</li>
+      </ul>
+    </aside>
+    <main>
+      <div class="add-div">
+        <button id="addClient" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="header">Nome</th>
+              <th class="header">E-mail</th>
+              <th class="header">Telefone</th>
+              <th class="header actions">Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tableContent">
+            <!-- <tr>
+                        <td class="body-cell">Nome 1</td>
+                        <td class="body-cell">email@teste.com</td>
+                        <td class="body-cell">(99) 99999-9999</td>
+                        <td class="body-cell actions">
+                            <div class="actions-buttons">
+                                <button class="edit">Editar</button>
+                                <button class="delete">Excluir</button>
+                            </div>
+                        </td>
+                    </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
